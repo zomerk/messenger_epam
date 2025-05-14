@@ -11,8 +11,8 @@ public class TemplateEngineParameterizedTest {
             "Hello, #{name}!, name, World, Hello, World!",
             "Welcome, #{user}!, user, Guest, Welcome, Guest!",
             "Price: #{price}, price, 10.99, Price: 10.99",
-            "#{greeting} #{name}!, greeting, Hello, Hello #{name}!", // Test when placeholder is at the beginning
-            "Hello, #{name}!, name, , Hello, !"  // Empty value
+            "#{greeting} #{name}!, greeting, Hello, Hello #{name}!",
+            "Hello, #{name}!, name, , Hello, !"
     })
     void shouldReplacePlaceholdersWithCsvSource(String template, String key, String value, String expected) {
         Client client = new Client();

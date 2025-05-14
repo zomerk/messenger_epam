@@ -16,7 +16,6 @@ public class TemplateEngineDynamicTest {
         client.setAddresses("test@example.com");
         TemplateEngine engine = new TemplateEngine();
 
-        // Define test cases as a collection of (template, values, expected)
         Object[][] testCases = {
                 {"Hello, #{name}!", Map.of("name", "World"), "Hello, World!"},
                 {"Welcome, #{user}!", Map.of("user", "Guest"), "Welcome, Guest!"},

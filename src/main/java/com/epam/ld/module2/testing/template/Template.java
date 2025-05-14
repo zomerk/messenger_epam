@@ -7,7 +7,7 @@ public class Template {
         private String templateString;
 
         public Template() {
-            this.templateString = ""; // Default to an empty string
+            this.templateString = "";
         }
 
         public Template(String templateString) {

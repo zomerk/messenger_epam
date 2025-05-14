@@ -45,7 +45,7 @@ public class TemplateEngineTest {
         java.util.Map<String, String> values = java.util.Map.of("tag", "replacement");
         TemplateEngine engine = new TemplateEngine();
         String result = engine.generateMessage(new Template(), client, values);
-        assertEquals("Some text: #{value}", result); // Expect no replacement as keys don't match
+        assertEquals("Some text: #{value}", result);
     }
     @Test
     void shouldHandleDifferentPlaceholderSyntax() {
